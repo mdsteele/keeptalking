@@ -4,7 +4,7 @@ An improved manual for the game [Keep Talking and Nobody
 Explodes](http://www.keeptalkinggame.com/), meant to be quicker and easier for
 the Expert to read than the normal manual.
 
-This is still a work in progress, and does not yet include all modules.
+This is still a work in progress.
 
 This manual distills the original manual's prose into concise lookup tables.
 In some cases, it also modifies the instructions given, in a way that preserves
