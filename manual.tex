@@ -1,0 +1,264 @@
+\documentclass[11pt]{amsart}
+
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[parfill]{parskip}
+
+\geometry{letterpaper}
+
+\begin{document}
+
+
+
+\section{Simple Wires}
+
+\begin{tabular}{|l|l|l|}
+\hline
+\multirow{4}{*}{3 wires} & none red                    & cut 2nd \\
+                         & last is white               & cut 3rd \\
+                         & $\ge 2$ blue                & cut last blue \\
+                         & otherwise                   & cut 3rd \\
+\hline
+\multirow{5}{*}{4 wires} & $\ge 2$ red, serial odd     & cut last red \\
+                         & last is yellow, none red    & cut 1st \\
+                         & $= 1$ blue                  & cut 1st \\
+                         & $\ge 2$ yellow              & cut 4th \\
+                         & otherwise                   & cut 2nd \\
+\hline
+\multirow{4}{*}{5 wires} & last is black, serial odd   & cut 4th \\
+                         & $= 1$ red, $\ge 2$ yellow   & cut 2nd \\
+                         & none black                  & cut 2nd \\
+                         & otherwise                   & cut 1st \\
+\hline
+\multirow{4}{*}{6 wires} & none yellow, serial odd     & cut 3rd \\
+                         & $= 1$ yellow, $\ge 2$ white & cut 4th \\
+                         & none red                    & cut last \\
+                         & otherwise                   & cut 4th \\
+\hline
+\end{tabular}
+
+
+
+\section{Complex Wires}
+
+\begin{tabular}{|c|c|c|c|l|}
+\hline
+\multirow{8}{*}{} & \multirow{4}{*}{} & \multirow{2}{*}{} & & cut \\
+\cline{4-5}
+ & & & $\bigstar$ & cut \\
+\cline{3-5}
+ & & \multirow{2}{*}{LED} & & leave \\
+\cline{4-5}
+ & & & $\bigstar$ & $\ge 2$ batteries? \\
+\cline{2-5}
+ & \multirow{4}{*}{BLUE} & & & cut \\
+\cline{4-5}
+ & & & $\bigstar$ & leave \\
+\cline{3-5}
+ & & \multirow{2}{*}{LED} & & parallel port? \\
+\cline{4-5}
+ & & & $\bigstar$ & parallel port? \\
+\hline
+\multirow{8}{*}{RED} & \multirow{4}{*}{} & \multirow{2}{*}{} & & even serial?\\
+\cline{4-5}
+ & & & $\bigstar$ & cut \\
+\cline{3-5}
+ & & \multirow{2}{*}{LED} & & $\ge 2$ batteries? \\
+\cline{4-5}
+ & & & $\bigstar$ & $\ge 2$ batteries? \\
+\cline{2-5}
+ & \multirow{4}{*}{BLUE} & & & even serial? \\
+\cline{4-5}
+ & & & $\bigstar$ & parallel port? \\
+\cline{3-5}
+ & & \multirow{2}{*}{LED} & & even serial? \\
+\cline{4-5}
+ & & & $\bigstar$ & leave \\
+\hline
+\end{tabular}
+
+
+
+\section{The Button}
+
+\begin{tabular}{|l|l|}
+\hline
+Blue ``ABORT''                      & hold          \\
+Red ``HOLD''                        & press/release \\
+``DETONATE'' with $\ge 2$ batteries & press/release \\
+White, with CAR indicator           & hold          \\
+FRK indicator and $\ge 3$ batteries & press/release \\
+otherwise                           & hold          \\
+\hline
+\end{tabular}
+
+\begin{tabular}{|l|l|}
+\hline
+Strip Color & Release on \\
+\hline
+Blue        & 4 \\
+Yellow      & 5 \\
+otherwise   & 1 \\
+\hline
+\end{tabular}
+
+
+
+\section{Who's On First?}
+
+\begin{tabular}{|l|c|}
+\hline
+\texttt{}         & bottom-left  \\ \hline
+\texttt{BLANK}    & mid-right    \\ \hline
+\texttt{C}        & top-right    \\ \hline
+\texttt{CEE}      & bottom-right \\ \hline
+\texttt{DISPLAY}  & bottom-right \\ \hline
+\texttt{FIRST}    & top-right    \\ \hline
+\texttt{HOLD ON}  & bottom-right \\ \hline
+\texttt{LEAD}     & bottom-right \\ \hline
+\texttt{LED}      & mid-left     \\ \hline
+\texttt{LEED}     & bottom-left  \\ \hline
+\texttt{NO}       & bottom-right \\ \hline
+\texttt{NOTHING}  & mid-left     \\ \hline
+\texttt{OKAY}     & top-right    \\ \hline
+\texttt{READ}     & mid-right    \\ \hline
+\texttt{RED}      & mid-right    \\ \hline
+\texttt{REED}     & bottom-left  \\ \hline
+\texttt{SAYS}     & bottom-right \\ \hline
+\texttt{SEE}      & bottom-right \\ \hline
+\texttt{THEIR}    & mid-right    \\ \hline
+\texttt{THERE}    & bottom-right \\ \hline
+\texttt{THEY ARE} & mid-left     \\ \hline
+\texttt{THEY'RE}  & bottom-left  \\ \hline
+\texttt{UR}       & top-left     \\ \hline
+\texttt{YES}      & mid-left     \\ \hline
+\texttt{YOU}      & mid-right    \\ \hline
+\texttt{YOU ARE}  & bottom-right \\ \hline
+\texttt{YOU'RE}   & mid-right    \\ \hline
+\texttt{YOUR}     & mid-right    \\ \hline
+\end{tabular}
+
+\begin{tabular}{|l|p{4.5in}|}
+\hline
+\texttt{BLANK}   & Wait, Right, Okay, Middle, Blank \\ \hline
+\texttt{DONE}    & Sure, Uh-Huh, Next, What?, YOUR, UR, You'RE, Hold, Like,
+                   You, U, You-Are, Uh-Uh, Done \\ \hline
+\texttt{FIRST}   & Left, Okay, Yes, Middle, No, Right, Nothing, Uhhh, Wait,
+                   Ready, Blank, What, Press, First \\ \hline
+\texttt{HOLD}    & You-Are, U, Done, Uh-Uh, You, UR, Sure, What?, You'RE, Next,
+                   Hold \\ \hline
+\texttt{LEFT}    & Right, Left \\ \hline
+\texttt{LIKE}    & You'RE, Next, U, UR, Hold, Done, Uh-Uh, What?, Uh-Huh, You,
+                   Like \\ \hline
+\texttt{MIDDLE}  & Blank, Ready, Okay, What, Nothing, Press, No, Wait, Left,
+                   Middle \\ \hline
+\texttt{NEXT}    & What?, Uh-Huh, Uh-Uh, YOUR, Hold, Sure, Next \\ \hline
+\texttt{NO}      & Blank, Uhhh, Wait, First, What, Ready, Right, Yes, Nothing,
+                   Left, Press, Okay, No \\ \hline
+\texttt{NOTHING} & Uhhh, Right, Okay, Middle, Yes, Blank, No, Press, Left,
+                   What, Wait, First, Nothing \\ \hline
+\texttt{OKAY}    & Middle, No, First, Yes, Uhhh, Nothing, Wait, Okay \\ \hline
+\texttt{PRESS}   & Right, Middle, Yes, Ready, Press \\ \hline
+\texttt{READY}   & Yes, Okay, What, Middle, Left, Press, Right, Blank, Ready \\
+                   \hline
+\texttt{RIGHT}   & Yes, Nothing, Ready, Press, No, Wait, What, Right \\ \hline
+\texttt{SURE}    & You-Are, Done, Like, You'RE, You, Hold, Uh-Huh, UR, Sure \\
+                   \hline
+\texttt{U}       & Uh-Huh, Sure, Next, What?, You'RE, UR, Uh-Uh, Done, U \\
+                   \hline
+\texttt{UH HUH}  & Uh-Huh \\ \hline
+\texttt{UH UH}   & UR, U, You-Are, You'RE, Next, Uh-Uh \\ \hline
+\texttt{UHHH}    & Ready, Nothing, Left, What, Okay, Yes, Right, No, Press,
+                   Blank, Uhhh \\ \hline
+\texttt{UR}      & Done, U, UR \\ \hline
+\texttt{WAIT}    & Uhhh, No, Blank, Okay, Yes, Left, First, Press, What, Wait
+                   \\ \hline
+\texttt{WHAT}    & Uhhh, What \\ \hline
+\texttt{WHAT?}   & You, Hold, You'RE, YOUR, U, Done, Uh-Uh, Like, You-Are,
+                   Uh-Huh, UR, Next, What? \\ \hline
+\texttt{YES}     & Okay, Right, Uhhh, Middle, First, What, Press, Ready,
+                   Nothing, Yes \\ \hline
+\texttt{YOU}     & Sure, You-Are, YOUR, You'RE, Next, Uh-Huh, UR, Hold, What?,
+                   You \\ \hline
+\texttt{YOU ARE} & YOUR, Next, Like, Uh-Huh, What?, Done, Uh-Uh, Hold, You, U,
+                   You'RE, Sure, UR, You-Are \\ \hline
+\texttt{YOU'RE}  & You, You'RE \\ \hline
+\texttt{YOUR}    & Uh-Uh, You-Are, Uh-Huh, YOUR \\ \hline
+\end{tabular}
+
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{Special Pronunciations} \\
+\hline
+U       & ``letter yoo'' \\
+UR      & ``letters yoo arr'' \\
+What    & ``what'' \\
+What?   & ``what question mark'' \\
+You     & ``word you'' \\
+You-Are & ``words you are'' \\
+You'RE  & ``you apostrophe arr ee'' \\
+YOUR    & ``why oh yoo arr'' \\
+\hline
+\end{tabular}
+
+
+
+\section{Memory}
+
+\begin{tabular}{|l|c|l|}
+\hline
+ & Display & Press \\
+\hline
+\multirow{4}{*}{Stage 1} & 1 & 2nd position \\
+                         & 2 & 2nd position \\
+                         & 3 & 3rd position \\
+                         & 4 & 4th position \\
+\hline
+\multirow{4}{*}{Stage 2} & 1 & Label ``4'' \\
+                         & 2 & \textit{stage 1 position} \\
+                         & 3 & 1st position \\
+                         & 4 & \textit{stage 1 position} \\
+\hline
+\multirow{4}{*}{Stage 3} & 1 & \textit{stage 2 label} \\
+                         & 2 & \textit{stage 1 label} \\
+                         & 3 & 3rd position \\
+                         & 4 & Label ``4'' \\
+\hline
+\multirow{4}{*}{Stage 4} & 1 & \textit{stage 1 position} \\
+                         & 2 & 1st position \\
+                         & 3 & \textit{stage 2 position} \\
+                         & 4 & \textit{stage 2 position} \\
+\hline
+\multirow{4}{*}{Stage 5} & 1 & \textit{stage 1 label} \\
+                         & 2 & \textit{stage 2 label} \\
+                         & 3 & \textit{stage 4 label} \\
+                         & 4 & \textit{stage 3 label} \\
+\hline
+\end{tabular}
+
+
+
+
+\section{The Knob}
+
+Defuser: Read fourth and fifth lights of top row, then of bottom row (off $=
+0$, on $= 1$).
+
+\begin{tabular}{|l|l|}
+\hline
+0010 & Down \\
+0100 & Down \\
+0101 & Up \\
+0110 & Up \\
+0111 & Left \\
+1001 & Right \\
+1101 & Right \\
+\hline
+\end{tabular}
+
+
+
+\end{document}
