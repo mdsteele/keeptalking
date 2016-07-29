@@ -11,6 +11,7 @@
 
 \newcommand{\Keypad}[1]
     {\raisebox{-0.8ex}{\includegraphics[height=5ex]{symbols/#1.png}}}
+\newcommand{\Maze}[1]{\includegraphics[height=1.2in]{mazes/#1.png}}
 
 \begin{document}
 
@@ -299,6 +300,22 @@ YOUR    & ``why oh yoo arr'' \\
                          & 4 & \textit{stage 3 label} \\
 \hline
 \end{tabular}
+
+
+
+
+\section{Mazes}
+
+Defuser: Give location of top-left-most green indicator.
+
+\subsection{Indicator in row 1}
+\Maze{11} \Maze{12} \Maze{14} \Maze{15}
+
+\subsection{Indicator in row 2}
+\Maze{21} \Maze{23} \Maze{25}
+
+\subsection{Indicator in row 3 or 4}
+\Maze{35} \Maze{44}
 
 
 
