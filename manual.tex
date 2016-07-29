@@ -12,6 +12,8 @@
 \newcommand{\Keypad}[1]
     {\raisebox{-0.8ex}{\includegraphics[height=5ex]{symbols/#1.png}}}
 \newcommand{\Maze}[1]{\includegraphics[height=1.2in]{mazes/#1.png}}
+\newcommand{\MorseDot}{$\bullet$ }
+\newcommand{\MorseDash}{\scalebox{1.5}[0.5]{$\blacksquare$} }
 
 \begin{document}
 
@@ -336,6 +338,75 @@ YOUR    & ``why oh yoo arr'' \\
 \end{tabular}
 
 
+
+\section{Morse Code}
+% ['shell', 'halls', 'slick', 'trick', 'boxes', 'leaks', 'strobe', 'bistro', 'flick', 'bombs', 'break', 'brick', 'steak', 'sting', 'vector', 'beats']
+% Only these appear: A, C, B, E, G, F, I, H, K, M, L, O, N, S, R, T, V, X
+
+\begin{tabular}{|ll|}
+\hline
+\MorseDot & E \\
+\MorseDot\MorseDot & I \\
+\MorseDot\MorseDot\MorseDot & S \\
+\MorseDot\MorseDot\MorseDot\MorseDot & H \\
+\MorseDot\MorseDot\MorseDot\MorseDash & V \\
+\MorseDot\MorseDot\MorseDash\MorseDot & F \\
+\MorseDot\MorseDash & A \\
+\MorseDot\MorseDash\MorseDot & R \\
+\MorseDot\MorseDash\MorseDot\MorseDot & L \\
+\MorseDash & T \\
+\MorseDash\MorseDot & N \\
+\MorseDash\MorseDot\MorseDot\MorseDot & B \\
+\MorseDash\MorseDot\MorseDot\MorseDash & X \\
+\MorseDash\MorseDot\MorseDash & K \\
+\MorseDash\MorseDot\MorseDash\MorseDot & C \\
+\MorseDash\MorseDash & M \\
+\MorseDash\MorseDash\MorseDot & G \\
+\MorseDash\MorseDash\MorseDash & O \\
+\hline
+\end{tabular}
+
+\begin{tabular}{|l|l|l|}
+\hline
+AKB & break & 3.572 \\
+AL & halls & 3.515 \\
+AT & beats & 3.600 \\
+BEA & beats & 3.600 \\
+BES & strobe & 3.545 \\
+BI & bistro & 3.552 \\
+BRI & brick & 3.575 \\
+BS & bombs & 3.565 \\
+CKB & brick & 3.575 \\
+CKS & slick & 3.522 \\
+CT & vector & 3.595 \\
+EC & vector & 3.595 \\
+EL & shell & 3.505 \\
+ESB & boxes & 3.535 \\
+EST & strobe & 3.545 \\
+F & flick & 3.555 \\
+G & sting & 3.592 \\
+HA & halls & 3.515 \\
+HE & shell & 3.505 \\
+IS & bistro & 3.552 \\
+KST & steak & 3.582 \\
+KT & trick & 3.532 \\
+LE & leaks & 3.542 \\
+M & bombs & 3.565 \\
+N & sting & 3.592 \\
+OBE & strobe & 3.545 \\
+OR & vector & 3.595 \\
+RE & break & 3.572 \\
+SBE & beats & 3.600 \\
+SLI & slick & 3.522 \\
+TE & steak & 3.582 \\
+TI & sting & 3.592 \\
+TO & vector & 3.595 \\
+TRI & trick & 3.532 \\
+TS & beats & 3.600 \\
+V & vector & 3.595 \\
+X & boxes & 3.535 \\
+\hline
+\end{tabular}
 
 
 \section{Mazes}
