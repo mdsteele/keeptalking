@@ -1,7 +1,7 @@
 # keeptalking
 
-An improved manual for the game {Keep Talking and Nobody
-Explodes}(http://www.keeptalkinggame.com/), meant to be quicker and easier for
+An improved manual for the game [Keep Talking and Nobody
+Explodes](http://www.keeptalkinggame.com/), meant to be quicker and easier for
 the Expert to read than the normal manual.
 
 This is still a work in progress, and does not yet include all modules.
