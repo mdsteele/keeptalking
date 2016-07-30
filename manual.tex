@@ -1,65 +1,38 @@
-\documentclass[11pt]{amsart}
+\documentclass[11pt]{article}
 
 \usepackage{amssymb}
 \usepackage{epstopdf}
-\usepackage{geometry}
+\usepackage[letterpaper, total={7in, 9.5in}]{geometry}
 \usepackage{graphicx}
+\usepackage{multicol}
 \usepackage{multirow}
 \usepackage[parfill]{parskip}
-
-\geometry{letterpaper}
 
 \newcommand{\Keypad}[1]
     {\raisebox{-0.8ex}{\includegraphics[height=5ex]{symbols/#1.png}}}
 \newcommand{\Maze}[1]{\includegraphics[height=1.2in]{mazes/#1.png}}
 \newcommand{\MorseDot}{$\bullet$ }
 \newcommand{\MorseDash}{\scalebox{1.5}[0.5]{$\blacksquare$} }
+\newcommand{\KnobLed}[1]{\textcircled{\raisebox{-0.2ex}{\small #1}}}
 
 \begin{document}
 
 
-
-\section{Relevant Information}
-
-CAR indicator
-
-FRK indicator
-
-Number of batteries (up to three)
-
-Serial number last digit even/odd
-
-Serial number contains vowel
+\begin{multicols}{2}
 
 
-
-\section{Symbol Keypad}
-
-\begin{tabular}{|l|l|}
+\begin{tabular}{|l|}
 \hline
-Unique & Ordering \\
+\multicolumn{1}{|c|}{Relevant Information} \\
 \hline
-\Keypad{at} \Keypad{lightning} & \Keypad{balloon} \Keypad{at} \Keypad{lambda}
-    \Keypad{lightning} \Keypad{kitty} \Keypad{funkyh} \Keypad{leftc} \\ \hline
-& \Keypad{epsilon} \Keypad{balloon} \Keypad{leftc} \Keypad{cocurl}
-    \Keypad{whitestar} \Keypad{funkyh} \Keypad{question} \\ \hline
-\Keypad{copyright} \Keypad{wcomma} \Keypad{komidzje} & \Keypad{copyright}
-    \Keypad{wcomma} \Keypad{cocurl} \Keypad{doublek} \Keypad{komidzje}
-    \Keypad{lambda} \Keypad{whitestar} \\ \hline
-& \Keypad{flatsix} \Keypad{pilcrow} \Keypad{yat} \Keypad{kitty}
-    \Keypad{doublek} \Keypad{question} \Keypad{smileyface} \\ \hline
-\Keypad{rightc} \Keypad{ksi} \Keypad{blackstar} & \Keypad{psi}
-    \Keypad{smileyface} \Keypad{yat} \Keypad{rightc} \Keypad{pilcrow}
-    \Keypad{ksi} \Keypad{blackstar} \\ \hline
-\Keypad{ki} \Keypad{ae} \Keypad{backwardsn} \Keypad{omega} & \Keypad{flatsix}
-    \Keypad{epsilon} \Keypad{ki} \Keypad{ae} \Keypad{psi} \Keypad{backwardsn}
-    \Keypad{omega} \\ \hline
+CAR indicator \\
+FRK indicator \\
+Parallel port \\
+Number of batteries (up to three) \\
+Serial number last digit even/odd \\
+Serial number contains vowel \\
+\hline
 \end{tabular}
-
-
-
-
-\section{Wires}
 
 \begin{tabular}{|l|l|l|}
 \hline
@@ -144,11 +117,36 @@ Unique & Ordering \\
 \hline
 \end{tabular}
 
-
-
-\section{The Button}
+\end{multicols}
 
 \begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{Symbol Keypad} \\
+\hline
+Unique & Ordering \\
+\hline
+\Keypad{at} \Keypad{lightning} & \Keypad{balloon} \Keypad{at} \Keypad{lambda}
+    \Keypad{lightning} \Keypad{kitty} \Keypad{funkyh} \Keypad{leftc} \\ \hline
+& \Keypad{epsilon} \Keypad{balloon} \Keypad{leftc} \Keypad{cocurl}
+    \Keypad{whitestar} \Keypad{funkyh} \Keypad{question} \\ \hline
+\Keypad{copyright} \Keypad{wcomma} \Keypad{komidzje} & \Keypad{copyright}
+    \Keypad{wcomma} \Keypad{cocurl} \Keypad{doublek} \Keypad{komidzje}
+    \Keypad{lambda} \Keypad{whitestar} \\ \hline
+& \Keypad{flatsix} \Keypad{pilcrow} \Keypad{yat} \Keypad{kitty}
+    \Keypad{doublek} \Keypad{question} \Keypad{smileyface} \\ \hline
+\Keypad{rightc} \Keypad{ksi} \Keypad{blackstar} & \Keypad{psi}
+    \Keypad{smileyface} \Keypad{yat} \Keypad{rightc} \Keypad{pilcrow}
+    \Keypad{ksi} \Keypad{blackstar} \\ \hline
+\Keypad{ki} \Keypad{ae} \Keypad{backwardsn} \Keypad{omega} & \Keypad{flatsix}
+    \Keypad{epsilon} \Keypad{ki} \Keypad{ae} \Keypad{psi} \Keypad{backwardsn}
+    \Keypad{omega} \\ \hline
+\end{tabular}
+
+\begin{multicols}{2}
+
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{The Button} \\
 \hline
 Blue ``ABORT''                      & hold          \\
 Red ``HOLD''                        & press/release \\
@@ -169,9 +167,9 @@ otherwise   & 1 \\
 \hline
 \end{tabular}
 
+\end{multicols}
 
-
-\section{Simon Says}
+\begin{multicols}{2}
 
 Serial number contains vowel:
 
@@ -203,11 +201,13 @@ Blue & Yellow & Blue & Green \\
 \hline
 \end{tabular}
 
+\end{multicols}
 
-
-\section{Who's On First?}
+\begin{multicols}{3}
 
 \begin{tabular}{|l|c|}
+\hline
+\multicolumn{2}{|c|}{Who's on First?} \\
 \hline
 \texttt{}         & bottom-left  \\ \hline
 \texttt{BLANK}    & mid-right    \\ \hline
@@ -239,7 +239,22 @@ Blue & Yellow & Blue & Green \\
 \texttt{YOUR}     & mid-right    \\ \hline
 \end{tabular}
 
-\begin{tabular}{|l|p{4.5in}|}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{Pronunciation Guide} \\
+\hline
+U       & letter yoo \\
+UR      & letters yoo arr \\
+What    & what \\
+What?   & what question mark \\
+You     & word you \\
+You-Are & words you are \\
+You'RE  & you apostrophe arr ee \\
+YOUR    & why oh yoo arr \\
+\hline
+\end{tabular}
+
+\begin{tabular}{|l|p{3.75in}|}
 \hline
 \texttt{BLANK}   & Wait, Right, Okay, Middle, Blank \\ \hline
 \texttt{DONE}    & Sure, Uh-Huh, Next, What?, YOUR, UR, You'RE, Hold, Like,
@@ -287,63 +302,46 @@ Blue & Yellow & Blue & Green \\
 \texttt{YOUR}    & Uh-Uh, You-Are, Uh-Huh, YOUR \\ \hline
 \end{tabular}
 
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{2}{|c|}{Special Pronunciations} \\
-\hline
-U       & ``letter yoo'' \\
-UR      & ``letters yoo arr'' \\
-What    & ``what'' \\
-What?   & ``what question mark'' \\
-You     & ``word you'' \\
-You-Are & ``words you are'' \\
-You'RE  & ``you apostrophe arr ee'' \\
-YOUR    & ``why oh yoo arr'' \\
-\hline
-\end{tabular}
+\end{multicols}
 
+\begin{multicols}{3}
 
-
-\section{Memory}
-
-\begin{tabular}{|l|c|l|}
+\begin{tabular}{|c|c|c|}
 \hline
- & Display & Press \\
+\multicolumn{3}{|c|}{Memory} \\
 \hline
-\multirow{4}{*}{Stage 1} & 1 & 2nd position \\
+Stage & Disp & Press \\
+\hline
+\multirow{4}{*}{1} & 1 & 2nd position \\
                          & 2 & 2nd position \\
                          & 3 & 3rd position \\
                          & 4 & 4th position \\
 \hline
-\multirow{4}{*}{Stage 2} & 1 & Label ``4'' \\
+\multirow{4}{*}{2} & 1 & Label ``4'' \\
                          & 2 & \textit{stage 1 position} \\
                          & 3 & 1st position \\
                          & 4 & \textit{stage 1 position} \\
 \hline
-\multirow{4}{*}{Stage 3} & 1 & \textit{stage 2 label} \\
+\multirow{4}{*}{3} & 1 & \textit{stage 2 label} \\
                          & 2 & \textit{stage 1 label} \\
                          & 3 & 3rd position \\
                          & 4 & Label ``4'' \\
 \hline
-\multirow{4}{*}{Stage 4} & 1 & \textit{stage 1 position} \\
+\multirow{4}{*}{4} & 1 & \textit{stage 1 position} \\
                          & 2 & 1st position \\
                          & 3 & \textit{stage 2 position} \\
                          & 4 & \textit{stage 2 position} \\
 \hline
-\multirow{4}{*}{Stage 5} & 1 & \textit{stage 1 label} \\
+\multirow{4}{*}{5} & 1 & \textit{stage 1 label} \\
                          & 2 & \textit{stage 2 label} \\
                          & 3 & \textit{stage 4 label} \\
                          & 4 & \textit{stage 3 label} \\
 \hline
 \end{tabular}
 
-
-
-\section{Morse Code}
-% ['shell', 'halls', 'slick', 'trick', 'boxes', 'leaks', 'strobe', 'bistro', 'flick', 'bombs', 'break', 'brick', 'steak', 'sting', 'vector', 'beats']
-% Only these appear: A, C, B, E, G, F, I, H, K, M, L, O, N, S, R, T, V, X
-
 \begin{tabular}{|ll|}
+\hline
+\multicolumn{2}{|c|}{Morse Code} \\
 \hline
 \MorseDot & E \\
 \MorseDot\MorseDot & I \\
@@ -367,6 +365,8 @@ YOUR    & ``why oh yoo arr'' \\
 \end{tabular}
 
 \begin{tabular}{|l|l|l|}
+\hline
+\multicolumn{3}{|c|}{Morse Code Words} \\
 \hline
 AKB & break & 3.572 \\
 AL & halls & 3.515 \\
@@ -408,26 +408,9 @@ X & boxes & 3.535 \\
 \hline
 \end{tabular}
 
-
-\section{Mazes}
-
-Defuser: Give location of top-left-most green indicator.
-
-\subsection{Indicator in row 1}
-\Maze{11} \Maze{12} \Maze{14} \Maze{15}
-
-\subsection{Indicator in row 2}
-\Maze{21} \Maze{23} \Maze{25}
-
-\subsection{Indicator in row 3 or 4}
-\Maze{35} \Maze{44}
-
-
-
-
-\section{Passwords}
-
 \begin{tabular}{|ccc|c|}
+\hline
+\multicolumn{4}{|c|}{Passwords} \\
 \hline
 \multirow{3}{*}{\texttt{A}} & \texttt{B} & & \texttt{ABOUT} \\
 \cline{2-4}
@@ -501,15 +484,27 @@ Defuser: Give location of top-left-most green indicator.
 \hline
 \end{tabular}
 
+\end{multicols}
 
-
-
-\section{The Knob}
-
-Defuser: Read fourth and fifth lights of top row, then of bottom row (off $=
-0$, on $= 1$).
+\begin{tabular}{|p{0.75in}l|}
+\hline
+\multicolumn{2}{|c|}{The Maze} \\
+\hline
+& Defuser: Give location of top-left-most green indicator. \\
+Indicator in row 1 & \Maze{11} \Maze{12} \Maze{14} \Maze{15} \\
+Indicator in row 2 & \Maze{21} \Maze{23} \Maze{25} \\
+Indicator in rows 3/4 & \Maze{35} \Maze{44} \\
+\hline
+\end{tabular}
 
 \begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{The Knob} \\
+\hline
+\multicolumn{2}{|c|}{\KnobLed{}\KnobLed{}\KnobLed{}%
+                     \KnobLed{1}\KnobLed{2}\KnobLed{}} \\
+\multicolumn{2}{|c|}{\KnobLed{}\KnobLed{}\KnobLed{}%
+                     \KnobLed{3}\KnobLed{4}\KnobLed{}} \\
 \hline
 0010 & Down \\
 0100 & Down \\
@@ -520,7 +515,5 @@ Defuser: Read fourth and fifth lights of top row, then of bottom row (off $=
 1101 & Right \\
 \hline
 \end{tabular}
-
-
 
 \end{document}
