@@ -169,39 +169,7 @@ otherwise   & 1 \\
 
 \end{multicols}
 
-\begin{multicols}{2}
-
-Serial number contains vowel:
-
-\begin{tabular}{|c|c|c|c|}
-\hline
-\multirow{2}{*}{Flash} & \multicolumn{3}{|c|}{Strikes} \\
-\cline{2-4}
- & 0 & 1 & 2 \\
-\hline
-Red & Blue & Yellow & Green \\
-Yellow & Green & Red & Blue \\
-Green & Yellow & Blue & Yellow \\
-Blue & Red & Green & Red \\
-\hline
-\end{tabular}
-
-Serial number does not contain vowel:
-
-\begin{tabular}{|c|c|c|c|}
-\hline
-\multirow{2}{*}{Flash} & \multicolumn{3}{|c|}{Strikes} \\
-\cline{2-4}
- & 0 & 1 & 2 \\
-\hline
-Red & Blue & Red & Yellow \\
-Yellow & Red & Green & Red \\
-Green & Green & Yellow & Blue \\
-Blue & Yellow & Blue & Green \\
-\hline
-\end{tabular}
-
-\end{multicols}
+\newpage
 
 \begin{multicols}{3}
 
@@ -304,40 +272,9 @@ YOUR    & why oh yoo arr \\
 
 \end{multicols}
 
-\begin{multicols}{3}
+\newpage
 
-\begin{tabular}{|c|c|c|}
-\hline
-\multicolumn{3}{|c|}{Memory} \\
-\hline
-Stage & Disp & Press \\
-\hline
-\multirow{4}{*}{1} & 1 & 2nd position \\
-                         & 2 & 2nd position \\
-                         & 3 & 3rd position \\
-                         & 4 & 4th position \\
-\hline
-\multirow{4}{*}{2} & 1 & Label ``4'' \\
-                         & 2 & \textit{stage 1 position} \\
-                         & 3 & 1st position \\
-                         & 4 & \textit{stage 1 position} \\
-\hline
-\multirow{4}{*}{3} & 1 & \textit{stage 2 label} \\
-                         & 2 & \textit{stage 1 label} \\
-                         & 3 & 3rd position \\
-                         & 4 & Label ``4'' \\
-\hline
-\multirow{4}{*}{4} & 1 & \textit{stage 1 position} \\
-                         & 2 & 1st position \\
-                         & 3 & \textit{stage 2 position} \\
-                         & 4 & \textit{stage 2 position} \\
-\hline
-\multirow{4}{*}{5} & 1 & \textit{stage 1 label} \\
-                         & 2 & \textit{stage 2 label} \\
-                         & 3 & \textit{stage 4 label} \\
-                         & 4 & \textit{stage 3 label} \\
-\hline
-\end{tabular}
+\begin{multicols}{3}
 
 \begin{tabular}{|ll|}
 \hline
@@ -374,12 +311,25 @@ AT & beats & 3.600 \\
 BEA & beats & 3.600 \\
 BES & strobe & 3.545 \\
 BI & bistro & 3.552 \\
+BOM & bombs & 3.565 \\
+BOX & boxes & 3.535 \\
+BRE & break & 3.572 \\
 BRI & brick & 3.575 \\
 BS & bombs & 3.565 \\
 CKB & brick & 3.575 \\
+CKF & flick & 3.555 \\
 CKS & slick & 3.522 \\
+CKT & trick & 3.532 \\
 CT & vector & 3.595 \\
+EAT & beats & 3.600 \\
 EC & vector & 3.595 \\
+\hline
+\end{tabular}
+\begin{tabular}{|l|l|l|}
+\hline
+\multicolumn{3}{|c|}{Morse Code Words} \\
+\multicolumn{3}{|c|}{(continued)} \\
+\hline
 EL & shell & 3.505 \\
 ESB & boxes & 3.535 \\
 EST & strobe & 3.545 \\
@@ -387,17 +337,28 @@ F & flick & 3.555 \\
 G & sting & 3.592 \\
 HA & halls & 3.515 \\
 HE & shell & 3.505 \\
+IN & sting & 3.592 \\
 IS & bistro & 3.552 \\
+KF & flick & 3.555 \\
 KST & steak & 3.582 \\
 KT & trick & 3.532 \\
 LE & leaks & 3.542 \\
 M & bombs & 3.565 \\
 N & sting & 3.592 \\
 OBE & strobe & 3.545 \\
+OBI & bistro & 3.552 \\
+OM & bombs & 3.565 \\
 OR & vector & 3.595 \\
+OX & boxes & 3.535 \\
 RE & break & 3.572 \\
+RV & vector & 3.595 \\
 SBE & beats & 3.600 \\
+SHA & halls & 3.515 \\
+SHE & shell & 3.505 \\
+SLE & leaks & 3.542 \\
 SLI & slick & 3.522 \\
+STE & steak & 3.582 \\
+STI & sting & 3.592 \\
 TE & steak & 3.582 \\
 TI & sting & 3.592 \\
 TO & vector & 3.595 \\
@@ -486,6 +447,33 @@ X & boxes & 3.535 \\
 
 \end{multicols}
 
+\begin{tabular}{|c|c|c|c||c|c|c|c|}
+\hline
+\multicolumn{8}{|c|}{Simon Says} \\
+\hline
+\multicolumn{4}{|c||}{Vowel in serial number} &
+\multicolumn{4}{|c|}{No vowel in serial number} \\
+\hline
+\multirow{2}{*}{Flash} & \multicolumn{3}{|c||}{Strikes} &
+\multirow{2}{*}{Flash} & \multicolumn{3}{|c|}{Strikes} \\
+\cline{2-4}
+\cline{6-8}
+ & 0 & 1 & 2 &
+ & 0 & 1 & 2 \\
+\hline
+Red & Blue & Yellow & Green &
+Red & Blue & Red & Yellow \\
+Yellow & Green & Red & Blue &
+Yellow & Red & Green & Red \\
+Green & Yellow & Blue & Yellow &
+Green & Green & Yellow & Blue \\
+Blue & Red & Green & Red &
+Blue & Yellow & Blue & Green \\
+\hline
+\end{tabular}
+
+\newpage
+
 \begin{tabular}{|p{0.75in}l|}
 \hline
 \multicolumn{2}{|c|}{The Maze} \\
@@ -494,6 +482,41 @@ X & boxes & 3.535 \\
 Indicator in row 1 & \Maze{11} \Maze{12} \Maze{14} \Maze{15} \\
 Indicator in row 2 & \Maze{21} \Maze{23} \Maze{25} \\
 Indicator in rows 3/4 & \Maze{35} \Maze{44} \\
+\hline
+\end{tabular}
+
+\begin{multicols}{2}
+
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{Memory} \\
+\hline
+Stage & Disp & Press \\
+\hline
+\multirow{4}{*}{1} & 1 & 2nd position \\
+                         & 2 & 2nd position \\
+                         & 3 & 3rd position \\
+                         & 4 & 4th position \\
+\hline
+\multirow{4}{*}{2} & 1 & Label ``4'' \\
+                         & 2 & \textit{stage 1 position} \\
+                         & 3 & 1st position \\
+                         & 4 & \textit{stage 1 position} \\
+\hline
+\multirow{4}{*}{3} & 1 & \textit{stage 2 label} \\
+                         & 2 & \textit{stage 1 label} \\
+                         & 3 & 3rd position \\
+                         & 4 & Label ``4'' \\
+\hline
+\multirow{4}{*}{4} & 1 & \textit{stage 1 position} \\
+                         & 2 & 1st position \\
+                         & 3 & \textit{stage 2 position} \\
+                         & 4 & \textit{stage 2 position} \\
+\hline
+\multirow{4}{*}{5} & 1 & \textit{stage 1 label} \\
+                         & 2 & \textit{stage 2 label} \\
+                         & 3 & \textit{stage 4 label} \\
+                         & 4 & \textit{stage 3 label} \\
 \hline
 \end{tabular}
 
@@ -515,5 +538,7 @@ Indicator in rows 3/4 & \Maze{35} \Maze{44} \\
 1101 & Right \\
 \hline
 \end{tabular}
+
+\end{multicols}
 
 \end{document}

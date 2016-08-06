@@ -33,7 +33,7 @@ def matches(substrings, words, ignore):
     for substring in substrings:
         skip = False
         for sub in ignore:
-            if sub in substring:
+            if substring.startswith(sub):
                 skip = True
                 break
         if skip:
